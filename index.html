@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Text to speech</title>
+  </head>
+
+  <body>
+
+    <div style="padding-bottom: 100px;">
+        <h1>Chosse Language</h1>
+        <select name="languages" id="langs">
+        </select>
+    </div>
+
+    
+
+    <ul id="badWordList">
+        <th>Bet Words List</th>
+    </ul>
+
+    <input type="text" id="badWordInput" name="badWordInput" placeholder="enter bad word">
+    <button id="badWordButton" onclick="AddBadWord()">Add Bad Word to List</button>
+    <button id="clearbadWordButton" onclick="clearBadWords()">Clear Bad Words</button>
+
+    <br>
+
+    <button id="startSpeech">Start</button>
+
+    <div style="padding-top:100px">
+        Output:
+        <p id="output"><em>...diagnostic messages</em></p>
+    </div>
+    <script src="Langs.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
